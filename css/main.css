@@ -98,6 +98,231 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* BASE STYLES - HEADER FOOTER */
+
+  header,
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .content-wrapper{
+    width: 88%;
+  }
+
+  header{
+    padding: 15px;
+  }
+
+  header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header .header-divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+
+  header nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  header nav ul li{
+    display: flex;
+  }
+
+  footer .content-wrapper{
+    width: 55%;
+  }
+
+  .footer-content{
+  
+  }
+
+  address .contact{
+
+  }
+
+  footer h4{
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  footer.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer{
+    margin-bottom: 5px;
+  }
+
+  /* Mobile - Homepage */
+
+  .hero-area{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .hero-area h1{
+    padding-top: 70px;
+  }
+  .hero-area .content-wrapper{
+
+  }
+
+  /* Aside */
+ 
+  aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+ }
+
+  .form-description{
+    padding-top: 50px;
+  }
+
+  .form{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  /* Features */
+
+  .features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .features-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 55%;
+  }
+
+  .fontawesome-icon{
+    margin-top: 50px;
+  }
+
+  .features-items-description{
+    margin-bottom: 40%;
+  }
+
+  /* Reviews */
+
+  .reviews{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+  .reviews h4{
+    width: 50%;
+  }
+
+  /* Mobile - FAQ */
+
+  .faq-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .faq-section .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  /* faq's don't seem to be centered avec flexbox.
+  *But if we make the articles flex, it's over-flexed. */
+
+  .faq-question{
+  }
+
+  .faq-question h4{
+    margin-top: 50px;
+  }
+  .faq-question p{
+    margin-top: 20px;
+  }
+
+  /* Mobile - About */
+
+  .mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .mission p{
+    margin-top: 20px;
+  }
+  .mission .content-wrapper{
+
+  }
+
+  .mission-content{
+
+  }
+
+  .map{
+
+  }
+
+  .map .content-wrapper{
+
+  }
+
+  .contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .general-information{
+
+  }
+
+  .chat-facilitator{
+
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
