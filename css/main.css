@@ -121,6 +121,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
   }
 
   header .header-divider{
@@ -151,7 +152,9 @@ textarea {
   }
 
   .footer-content{
-  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   address .contact{
@@ -162,6 +165,11 @@ textarea {
     margin-top: 45px;
     margin-bottom: 20px;
   }
+
+  footer p{
+    margin: 0;
+  }
+
   footer.social{
     display: flex;
     justify-content: space-between;
@@ -172,6 +180,13 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
 
   footer{
@@ -195,13 +210,6 @@ textarea {
 
   /* Aside */
  
-  aside{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
- }
-
   .form-description{
     padding-top: 50px;
   }
@@ -217,6 +225,10 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  .features p{
+    margin: 0;
   }
 
   .features-items{
@@ -412,15 +424,119 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /* Problem: tablet styles applying to mobile width too on devtools. So annoying! */
+@media only screen and (min-width: 768px){
+  /* Tablet styles */
+
+  .content-wrapper{
+    width: 83%;
+    margin: 100px 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  }
+  .header-divider{
+    width: 35%;
+  }
+  .unplugged-logo{
+    width: 30%;
+  }
+
+/* Hero area */
+
+.hero-area h1{
+  width: 72%;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* Form (aside) section */
+aside .content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.form-description{
+  width: 41%;
+  margin: 0;
+}
+
+.form{
+  width: 41%;
+  margin: 0;
+}
+
+/* Features section */
+
+.features .content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.features-items{
+  width: 41%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  /* Instructions say to put align items, and I haven't */
+  flex-basis: 1;
+}
+
+.features-items-description{
+  width: 200px;
+}
+
+/* Reviews */
+
+.reviews h3{
+  width: 65%;
+}
+
+.reviews article{
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.reviews article .content-wrapper{
+  width: 41%;
+}
+
+article .img{
+  width: 41%;
+}
+
+.footer-content{
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}
+
+
+@media only screen and (min-width: 1200px){
+  /* Desktop styles */
+
+  header{
+    
+  }
+
 }
 
 /* ==========================================================================
